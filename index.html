@@ -11,43 +11,202 @@
 <body>
     <!-- NavBar -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+        <div class="container-fluid  p-3   ">
+            <a class="navbar-brand" href="#"><img src="assets/Netflix_Logo_RGB.png" alt="" id="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <li class="nav-item ">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              <li class="nav-item ">
+                <a class="nav-link text-light" href="#">TV Shows</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item  ">
+                <a class="nav-link text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Movies</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+              <li class="nav-item ">
+                <a class="nav-link text-light">Recently Adedd</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-light">My list</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <div class="d-flex text-light align-items-center ">
+              <ion-icon class="me-2"  name="search-outline"></ion-icon>
+              <span  class="me-2">KIDS</span>
+              <ion-icon  class="me-2" name="notifications-outline"></ion-icon>
+                  <div class="utente d-flex align-items-center">
+                     <img class="me-1"  id="user" src="assets/user.png" alt="">
+                     <ion-icon name="caret-down-outline"></ion-icon>
+                  </div>
+
+
+            </div>
+              
+            
           </div>
         </div>
       </nav>
 
+<div class="container-fluid d-flex space justify-content-between p-4">
+  
+  <div class="btn-group">
+    <h3 class="text-light me-3">Tv Shows</h3>
+    <button type="button" class="btn btn-dark dropdown-toggle rounded-0 " data-bs-toggle="dropdown" aria-expanded="false">
+      Geners
+    </button> 
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+    <div class="icone text-light d-flex align-items-center ">
+      <div class="border border-1 border-light p-1">
+      <ion-icon  name="menu-outline"></ion-icon>
+    </div>
+     <div class="border border-1 border-light p-1">
+      <ion-icon name="grid-outline"></ion-icon>
+     </div>
+  </div>
+
+
+</div>
+
+<!-- Primo carosello -->
+
+<div class="container-fluid p-4 overflow-hidden ">
+  <h2 class="text-light mb-4">Trending Now</h2>
+  <div class="row flex-nowrap w-100 ">
+    <div class="card col-sm-2 col-md-2 col-lg-2 rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/1.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/2.png" alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent" >
+      <img  src="assets/movies/3.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent" >
+      <img  src="assets/movies/4.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/5.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2 col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/6.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2 col-md-2 col-lg-2  rounded-0 p-0 bg-transparent">
+      <img  src="assets/movies/7.png"  alt="...">
+      
+    </div>
+  </div>
+
+</div>
+
+<!-- Secondo carosello -->
+
+<div class="container-fluid p-4 overflow-hidden ">
+  <h2 class="text-light mb-4">Watch it Again</h2>
+  <div class="row flex-nowrap w-100 ">
+    <div class="card col-sm-2 col-md-2 col-lg-2 rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/8.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/9.png" alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent" >
+      <img  src="assets/movies/10.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent" >
+      <img  src="assets/movies/11.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/12.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2 col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/13.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2 col-md-2 col-lg-2  rounded-0 p-0 bg-transparent">
+      <img  src="assets/movies/14.png"  alt="...">
+      
+    </div>
+  </div>
+
+</div>
+
+<!-- Terzo carosello -->
+
+<div class="container-fluid p-4 overflow-hidden ">
+  <h2 class="text-light mb-4">Trending Now</h2>
+  <div class="row flex-nowrap w-100 ">
+    <div class="card col-sm-2 col-md-2 col-lg-2 rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/15.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/16.png" alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent" >
+      <img  src="assets/movies/17.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent" >
+      <img  src="assets/movies/18.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2  col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/15.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2 col-md-2 col-lg-2  rounded-0 p-0 bg-transparent"  >
+      <img  src="assets/movies/8.png"  alt="...">
+      
+    </div>
+
+    <div class="card col-sm-2 col-md-2 col-lg-2  rounded-0 p-0 bg-transparent">
+      <img  src="assets/movies/9.png"  alt="...">
+      
+    </div>
+  </div>
+
+</div>
 
 
 

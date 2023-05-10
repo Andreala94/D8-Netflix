@@ -1,0 +1,32 @@
+/* Body */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black ; 
+}
+/* Navbar */
+#logo{
+    width: 100px;
+}
+#user{
+    width: 30px;
+}
+.navbar{
+    background-color: black !important;
+    
+}
+/* Tv shows */
+.generi{
+    box-sizing: border-box;
+    border: 1px solid white
+}
+
+
+/* Primo Carosello */
+.card:hover{
+    transition: 0,3;
+    z-index: 2;
+}
